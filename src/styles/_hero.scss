@@ -1,0 +1,173 @@
+.hero {
+    display: flex;
+    background-color: rgba(0, 165, 148, 0.925);
+    
+    &__imagem {
+        height: auto;
+        max-height: 920px;
+        width: 40%;
+        object-fit: cover;
+    }
+    
+    &__informacoes {
+        text-align: center;
+        font-size: 24px;
+        color: #ffffffc4;
+        margin-top: -20px;
+        
+        &__aviso {
+            margin-top: 48px;
+            color: #cccccc;
+            font-size: 18px;
+        }        
+        
+        h1 {
+            img {
+                width: 80%;
+            }
+        }
+
+        &__itens {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            gap: 8px;
+
+            &--animeAwards {
+                font-size: 44px;
+                color: #ffffffe8;
+                
+                img {
+                    width: 28px;
+                }
+            }
+
+            &--idade {
+                a {
+                    color: #ffffffd7;
+                    letter-spacing: 2px;
+                }
+
+                img {
+                    width: 1.5rem;
+                }
+            }
+            
+            
+            &--estrelas {
+                a {
+                    text-decoration: none;
+                    color: #ffffffd7;
+                }
+            }
+        }
+
+        &__streaming {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            text-align: center;
+            justify-content: center;
+            padding-top: 48px;
+            
+            li {
+                padding: 0 24px;
+                
+                a {
+                    list-style: none;
+                    text-decoration: none;
+                }
+                
+                img {
+                    height: 50px;
+                    width: 70%;
+                    filter: brightness(0) invert(1);
+
+                }
+
+                button {
+                    display: flex;
+                    width: 100%;
+                    margin: 8px 0;
+                    padding: 16px 80px;
+                    font-size: 24px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    color: #ffffff;
+                    border: none;
+                    background-color: #004d40;
+                    font-family: "IM Fell English SC", sans-serif;
+                    font-weight: bold;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        transition: .3 ease;
+                    }
+                }
+                
+                p {
+                    font-size: 18px;
+                    color: #ffffffbe;;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        display: block;
+
+        &__imagem {
+            width: 100%;
+        }
+
+        &__informacoes {
+            text-align: center;
+            font-size: 16px;
+            color: #ffffffc4;
+            margin-top: 0px;
+
+            h1 {
+                display: none;
+            }
+
+            &__aviso {
+                margin-top: 32px;
+                font-size: 16px;
+            }
+
+            &__itens {
+                &--animeAwards {
+                    font-size: 28px;
+                }
+            }
+
+            &__streaming {
+                flex-direction: column;
+                gap: 28px;
+                padding-top: 24px;
+                li {
+                    
+                    img {
+                        height: 50px;
+                        width: 60%;
+                    }
+
+                    button {
+                        width: 100%;
+                        margin: 8px 0;
+                        padding: 12px 80px;
+                        font-size: 24px;
+                    }
+
+                    p {
+                    font-size: 16px;
+                    color: #ffffffbe;;
+                    }
+                }
+            }
+        }
+    }
+}

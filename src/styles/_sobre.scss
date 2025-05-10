@@ -1,0 +1,45 @@
+.sobre {
+    margin: 64px 0;
+    display: flex;
+
+    padding: 5vw;
+    background-image:
+        url(../images/moldura/1.png),
+        url(../images/moldura/2.png),
+        url(../images/moldura/3.png),
+        url(../images/moldura/4.png);
+    background-repeat: no-repeat;
+    background-size: 16%;
+    background-position: top left, top right, bottom left, bottom right;
+    color: #000000;
+
+    h2 {
+        font-size: 44px;
+    }
+    
+
+    &__text {
+        font-size: 32px;
+        padding: 16px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h2 {
+            font-size: 32px;
+            margin-top: -16px;
+        }
+        
+        img {
+            height: 100%;
+        }
+    
+        &__text {
+            font-size: 24px;
+        }
+    }
+}

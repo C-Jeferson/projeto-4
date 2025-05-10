@@ -1,0 +1,37 @@
+.header {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 999;
+
+    &__botao {
+        padding: 8px;
+        font-size: 24px;
+        background-color: rgba(255, 255, 255, 0.863);
+        border: 4px solid rgba(173, 111, 24, 0.829);
+        border-radius: 8px;
+        font-weight: bold;
+        color: rgba(173, 111, 24, 0.829);
+    }
+    
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 50px rgba(212,175,55,0.5);  
+    }
+
+    &--ativo {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        top: 16px;
+        right: 8px;
+
+        &__botao {
+            padding: 5px;
+            font-size: 18px;
+        }
+    }
+}

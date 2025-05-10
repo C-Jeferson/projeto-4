@@ -1,0 +1,52 @@
+.rodape {
+    text-align: center;
+    font-size: 28px;
+    padding: 128px 0;
+
+    img {
+        width: 10%;
+    }
+    
+    .divide {
+        width: 70%;
+    }
+
+    &__presente {
+        display: none;
+
+        img {
+            width: 20%;
+        }
+
+        &--ativo {
+            display: block;
+        }
+    }
+}
+
+#buttonPresente {
+    border: none;
+    color: rgb(85, 26, 139);
+    background-color: transparent;
+    font-size: 28px;
+    font-family: "IM Fell English SC", sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .rodape {
+        padding: 64px 5vw;
+        font-size: 24px;
+
+        img {
+            width: 20%;
+        }
+
+        &__presente {
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
