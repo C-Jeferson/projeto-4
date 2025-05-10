@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     //troca img mobile e pc
     function atualizarImagem() {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 900) {
             imgPrincipal.src = "./dist/images/logos/principal-mobile.png";
         } else {
             imgPrincipal.src = "./dist/images/logos/principal.jpg";
